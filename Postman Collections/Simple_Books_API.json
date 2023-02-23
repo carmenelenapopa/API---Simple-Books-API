@@ -1,0 +1,962 @@
+{
+	"info": {
+		"_postman_id": "616d0807-b6b1-43e4-9b54-2326034e9ba5",
+		"name": "Simple Books API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Status",
+			"item": [
+				{
+					"name": "GET Status",
+					"_postman_id": "990451ef-85b9-4a6a-b9fc-5855726a549b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{SimpleBooksBaseUrl}}/status"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "9990b24c-55dd-4dc5-be61-d67b1d88a816"
+		},
+		{
+			"name": "GET All Books",
+			"item": [
+				{
+					"name": "GET All Books",
+					"_postman_id": "bc39b616-8f20-4abb-a741-2c30fd858595",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{SimpleBooksBaseUrl}}/books"
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=fiction & No Limit",
+					"_postman_id": "cfebbbe0-f7af-4ab3-ad54-bc4a4ae92f61",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=non-fiction & Limit=1",
+					"_postman_id": "5204cb23-6330-47a6-bbd0-b0de49996f90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=non-fiction&limit=1",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "non-fiction"
+								},
+								{
+									"key": "limit",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=non-fiction & Limit=2",
+					"_postman_id": "7ae4bf04-3df7-482e-bb19-5c172d31c95d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=non-fiction&limit=2",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "non-fiction"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=non-fiction & Limit=0",
+					"_postman_id": "857bc703-397d-4c76-8c58-6962f1d59796",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=non-fiction&limit=0",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "non-fiction"
+								},
+								{
+									"key": "limit",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=non-fiction & Limit=20",
+					"_postman_id": "719cefa4-7333-403f-9b90-ebc0ae6068c5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=non-fiction&limit=20",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "non-fiction"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=non-fiction & Limit=21",
+					"_postman_id": "bee1b3a5-2bad-4568-b4a6-0bbd70170df4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=non-fiction&limit=21",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "non-fiction"
+								},
+								{
+									"key": "limit",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=non-fiction & No Limit",
+					"_postman_id": "cb06ab0d-958d-4f6a-bafc-06962c78f544",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=non-fiction",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "non-fiction"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=fiction & Limit=0",
+					"_postman_id": "41524de1-1e6c-4790-b200-367ecd8dc18e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction&limit=0",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								},
+								{
+									"key": "limit",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=fiction & Limit=1",
+					"_postman_id": "a4661999-a563-4d3e-976a-bf1c284ff52a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction&limit=1",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=fiction & Limit=2",
+					"_postman_id": "ecda740b-ef14-4c4d-9f2b-4932e014daa4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction&limit=2",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=fiction & Limit=20",
+					"_postman_id": "95b460fc-b66d-4ce7-940c-570efd8839ff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction&limit=20",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Books With Params - Type=fiction & Limit=21",
+					"_postman_id": "2907ac30-6f1c-47e6-a9ae-c621b6baa04e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction&limit=21",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								},
+								{
+									"key": "limit",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "4011e064-fc6c-4803-8936-d37da40d63e7"
+		},
+		{
+			"name": "GET Single Book",
+			"item": [
+				{
+					"name": "GET Single Books - ID=6",
+					"_postman_id": "2d110095-b1c6-4c47-8e8c-7cecd96e1a94",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books/:bookId",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books",
+								":bookId"
+							],
+							"variable": [
+								{
+									"key": "bookId",
+									"value": "6",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Single Books - ID=4",
+					"_postman_id": "b73ec25c-6ad2-4b6a-bd82-260e03e8d0a5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books/:bookId",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books",
+								":bookId"
+							],
+							"variable": [
+								{
+									"key": "bookId",
+									"value": "4",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Single Books - ID=3",
+					"_postman_id": "9a9089ef-e842-420d-828f-a50349366980",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{SimpleBooksBaseUrl}}/books/3"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Single Books - ID=2",
+					"_postman_id": "8c404966-bc0e-4ccf-9e1a-702c4d7a9185",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{SimpleBooksBaseUrl}}/books/2"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Single Books - ID=50",
+					"_postman_id": "14407760-bbab-4695-91a8-8befca00e864",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{SimpleBooksBaseUrl}}/books/50"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "7798df4d-b8ea-4546-9798-79c48b735776"
+		},
+		{
+			"name": "Submit an order",
+			"item": [
+				{
+					"name": "Submit an order - available",
+					"_postman_id": "40ecc875-67c3-4f11-a338-589e90dc8a20",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{SimpleBooksBaseUrl}}/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Submit an order - available1",
+					"_postman_id": "ef54cd25-68e0-4822-af35-91b757256404",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": 3,\r\n  \"customerName\": \"Carmen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{SimpleBooksBaseUrl}}/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Submit an order - available2",
+					"_postman_id": "0ce50717-324d-44d1-9636-c5fc076baa12",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": 5,\r\n  \"customerName\": \"Ariana\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{SimpleBooksBaseUrl}}/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Submit an order - generating random customer name",
+					"_postman_id": "00cc8758-0174-4001-86be-75b912a31249",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"{{$randomFullName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{SimpleBooksBaseUrl}}/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Submit an order - not available",
+					"_postman_id": "8101afde-5bb4-40fa-acce-04bfaa029117",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": 2,\r\n  \"customerName\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{SimpleBooksBaseUrl}}/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "API Authentication",
+					"_postman_id": "286b05ea-7ce8-47a3-8b10-143d2d61df4e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"clientName\": \"PostmanCarmen\",\r\n   \"clientEmail\": \"carmen@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{SimpleBooksBaseUrl}}/api-clients/"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "6956357c-2d9b-4549-8697-b6eade6db97b",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fb6ea45c-2841-4a95-b3ad-56ce81067655",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae6a346a-6750-4c2f-9eba-42834b4f5515",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "GET All Orders",
+			"item": [
+				{
+					"name": "GET All Orders",
+					"_postman_id": "7399121a-0ebf-42a0-a5e2-117245fab1af",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{SimpleBooksBaseUrl}}/orders"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "09eb2f83-f01f-48bf-92a1-e7687c544545"
+		},
+		{
+			"name": "GET An Order",
+			"item": [
+				{
+					"name": "GET An Order - ID",
+					"_postman_id": "8e66db4f-3c92-4a56-af9c-32cd676a7ba5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/orders/:orderId",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "LZl2LVVpMTCMa0d4J3TSs",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET An Order - ID1",
+					"_postman_id": "33e95a29-d89d-4134-ab9d-fa95d1f918b2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/orders/:orderId",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "Z7oDzHADJe3M1qg6NYFzK",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "ca0d5ef0-df23-4f2a-85e5-0c5c22744c19"
+		},
+		{
+			"name": "Update An Order",
+			"item": [
+				{
+					"name": "PATCH Update An Order1",
+					"_postman_id": "96fe1921-49d6-4c32-9b20-32e15954469f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerName\": \"Carmen Elena Popa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{SimpleBooksBaseUrl}}/orders/Z7oDzHADJe3M1qg6NYFzK"
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Update An Order",
+					"_postman_id": "6933cec8-4bdb-4921-b0d6-aaf0d1bf2cd6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerName\": \"{{$randomFullName}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/orders/:orderId",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "LZl2LVVpMTCMa0d4J3TSs",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "039a407a-25e7-44cb-9568-2e474a31059c"
+		},
+		{
+			"name": "DELETE An Order",
+			"item": [
+				{
+					"name": "DELETE An Existent Order",
+					"_postman_id": "e65ed489-b966-4c64-a149-84baf3505fee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{AccessToken}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/orders/:orderId",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "EisZeOz9Mvd6W4MkhbC61",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "eb74bf66-f94d-4048-9205-244cc4a0cfe5"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "342af9cf-5eec-4a64-907d-cefc69d53591",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5144fa85-00e5-46af-8ea1-f8239519d194",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "37d1e321-b8f9-44a6-b7fb-6950c26dad46",
+			"key": "SimpleBooksBaseUrl",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string"
+		},
+		{
+			"id": "d5c97467-f99b-4fa0-b6ff-512d1e26619c",
+			"key": "AccessToken",
+			"value": "--",
+			"type": "string"
+		}
+	]
+}
