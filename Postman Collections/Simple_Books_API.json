@@ -104,7 +104,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{SimpleBooksBaseUrl}}/books?type=non-fiction",
+							"raw": "{{SimpleBooksBaseUrl}}/books?limit=0",
 							"host": [
 								"{{SimpleBooksBaseUrl}}"
 							],
@@ -113,8 +113,9 @@
 							],
 							"query": [
 								{
-									"key": "type",
-									"value": "non-fiction"
+									"key": "limit",
+									"value": "0",
+									"type": "text"
 								}
 							]
 						}
@@ -968,12 +969,12 @@
 	],
 	"variable": [
 		{
-			"id": "5d09b930-85a3-4569-b017-b7b6c568b496",
+			"id": "50bea9dc-8d13-4994-aeb6-ffbade369e69",
 			"key": "SimpleBooksBaseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "8b4aca5e-0b1e-4f4f-ac94-5399116a857a",
+			"id": "215e0fbe-c021-49bc-a254-e925d458c5f5",
 			"key": "AccessToken",
 			"value": "--",
 			"type": "string"
