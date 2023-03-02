@@ -150,6 +150,33 @@
 					"response": []
 				},
 				{
+					"name": "GET All Books With Params - No Type & Limit 2",
+					"id": "b5571f97-d145-4b20-8bd1-324e16e09551",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SimpleBooksBaseUrl}}/books?limit=2",
+							"host": [
+								"{{SimpleBooksBaseUrl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "GET All Books With Params - Type=non-fiction & Limit=1",
 					"id": "5204cb23-6330-47a6-bbd0-b0de49996f90",
 					"protocolProfileBehavior": {
@@ -996,12 +1023,12 @@
 	],
 	"variable": [
 		{
-			"id": "d68f1844-b9c2-435e-bd99-34c3fa2f0fb1",
+			"id": "475f10bf-0502-4f1b-b323-ec96052a3f65",
 			"key": "SimpleBooksBaseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "191fbbd5-5be6-47a9-8fb3-eeff3a085330",
+			"id": "21eb9944-d1f9-49c2-a709-bf052a613fb5",
 			"key": "AccessToken",
 			"value": "--",
 			"type": "string"
