@@ -498,9 +498,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction&limit=2",
+							"raw": "https://simple-books-api.glitch.me/books?type=fiction&limit=2",
+							"protocol": "https",
 							"host": [
-								"{{SimpleBooksBaseUrl}}"
+								"simple-books-api",
+								"glitch",
+								"me"
 							],
 							"path": [
 								"books"
@@ -529,9 +532,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{SimpleBooksBaseUrl}}/books?type=fiction&limit=20",
+							"raw": "https://simple-books-api.glitch.me/books?type=fiction&limit=20",
+							"protocol": "https",
 							"host": [
-								"{{SimpleBooksBaseUrl}}"
+								"simple-books-api",
+								"glitch",
+								"me"
 							],
 							"path": [
 								"books"
@@ -1116,12 +1122,12 @@
 	],
 	"variable": [
 		{
-			"id": "19082b24-763a-4809-b08c-e7d0d0d7b7ea",
+			"id": "0ff05a34-d643-4aed-a604-b5d12fef9d52",
 			"key": "SimpleBooksBaseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "82b81fca-479b-4ebf-8602-87a699cfc520",
+			"id": "f3b84206-8911-48e2-8e17-63b25232da69",
 			"key": "AccessToken",
 			"value": "--",
 			"type": "string"
