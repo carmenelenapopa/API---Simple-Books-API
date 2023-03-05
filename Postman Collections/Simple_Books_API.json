@@ -819,7 +819,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "{{AccessToken}}"
+								"token": "cf7b5a49e2af2d393ab654d49db2247bc7cdd6313369b2c8e897416877e8000d"
 							}
 						},
 						"method": "POST",
@@ -1134,12 +1134,12 @@
 	],
 	"variable": [
 		{
-			"id": "01810efe-907b-4712-9125-51ddc5703176",
+			"id": "a49d3bc7-cc69-4f80-9d68-90f15e40c18e",
 			"key": "SimpleBooksBaseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "38870045-f9ef-44d8-94b9-5afba09b2763",
+			"id": "4781fd96-57f8-4ade-9d80-f2225e7d9b35",
 			"key": "AccessToken",
 			"value": "--",
 			"type": "string"
