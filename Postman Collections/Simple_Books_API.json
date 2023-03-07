@@ -914,7 +914,7 @@
 								}
 							}
 						},
-						"url": "{{SimpleBooksBaseUrl}}/orders"
+						"url": "https://simple-books-api.glitch.me/orders"
 					},
 					"response": []
 				}
@@ -1137,12 +1137,12 @@
 	],
 	"variable": [
 		{
-			"id": "5d3bf4b9-b07e-4255-bba9-488722693777",
+			"id": "d434b819-8619-4bdb-9f61-f7cfac4c7a49",
 			"key": "SimpleBooksBaseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "f839a7b5-ea28-4d20-ae86-f675bbbeb8a3",
+			"id": "4651f915-a8f5-46d6-a627-e192dd5cf30b",
 			"key": "AccessToken",
 			"value": "--",
 			"type": "string"
