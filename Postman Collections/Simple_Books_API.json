@@ -620,7 +620,7 @@
 							"variable": [
 								{
 									"key": "bookId",
-									"value": "6"
+									"value": null
 								}
 							]
 						}
@@ -1137,12 +1137,12 @@
 	],
 	"variable": [
 		{
-			"id": "001085d5-2e45-493e-b567-bbf43e401a6a",
+			"id": "09371a31-f9c8-4f68-8143-58f6bbbb5dc3",
 			"key": "SimpleBooksBaseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "ad87aa16-04a1-484f-a467-b4c12b6590f7",
+			"id": "a65ae5f7-8e9f-4280-8d96-e011dfa6f184",
 			"key": "AccessToken",
 			"value": "--",
 			"type": "string"
